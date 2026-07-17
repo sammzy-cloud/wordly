@@ -1,0 +1,122 @@
+body {
+    background-color: #F5F9F5;
+    color: #2E2E2E;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #2F5D50;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+form {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 300px;
+    padding: 12px;
+    border: 2px solid #C8D5C0;
+    border-radius: 8px;
+}
+
+
+button {
+    background-color: #4C956C;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #2F5D50;
+}
+
+.content-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+#saved-words {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #C8D5C0;
+}
+#saved-words-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+#result{
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #C8D5C0;
+
+}
+
+#favourites {
+   flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #C8D5C0;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;          
+    flex-wrap: wrap;    
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+
+li span {
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Dictionary</h1>
+    <p>Your easy to use reference tool for beginners and highly experienced English learners.</p>
+  </header>
+    <main>
+      <div id = "search-conatiner">
+        <form id="dictionary-form">
+         <label for="word">Search for a word here:</label>
+         <input type="text" id="word" placeholder="Enter a word" required>
+         <button type="submit">Search</button>
+        </form>
+      </div> 
+      
+      <div class = "content-container">
+        <section id = "result">
+          <h2>Results</h2>
+          <h3 id = "word-title"></h3>
+          <p id = "pronunciation"></p>
+          <p id = "part-of-speech"></p>
+          <p id = "definition"></p>
+          <p id = "example"></p>     
+          <p>Source:<a id="source-link" href="#" target="_blank"></a></p>
+          <p id = "synonyms-list">Synonyms</p>
+          <div class="button-container">
+          <button type="submit" id = "save-button">Save Word</button>
+           <button id="audio-button">Play Pronunciation</button>
+           <button id="favourite-button">Favourite</button>
+           </div>
+        </section>
+       
+        <section id = "saved-words">
+          <h2>Saved Words</h2>
+           <ul id = "saved-words-list"></ul>
+           
+        </section>
+        <section id = "favourites">
+          <h2>Favourite Words</h2>
+          <ul id = "favourites-list"></ul>
+         
+        </section>
+      </div>
+            
+
+
+    
+      
+   
+
+
+     
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
