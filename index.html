@@ -16,48 +16,32 @@
         <form id="dictionary-form">
          <label for="word">Search for a word here:</label>
          <input type="text" id="word" placeholder="Enter a word" required>
-         <button type="submit">Search</button>
+         <button id = "search-button" type="submit">Search</button>
         </form>
       </div> 
-      
       <div class = "content-container">
         <section id = "result">
           <h2>Results</h2>
+          <div id="loading-message"></div>
+          <p id="error-message"></p>
           <h3 id = "word-title"></h3>
           <p id = "pronunciation"></p>
           <p id = "part-of-speech"></p>
           <p id = "definition"></p>
           <p id = "example"></p>     
-          <p>Source:<a id="source-link" href="#" target="_blank"></a></p>
-          <p id = "synonyms-list">Synonyms</p>
+          <p id ="source-container">Source:<a id="source-link" href="#" target="_blank"></a></p>
+          <ul id = "synonyms-list">Synonyms</ul>
           <div class="button-container">
-          <button type="submit" id = "save-button">Save Word</button>
-           <button id="audio-button">Play Pronunciation</button>
-           <button id="favourite-button">Favourite</button>
-           </div>
-        </section>
-       
-        <section id = "saved-words">
-          <h2>Saved Words</h2>
-           <ul id = "saved-words-list"></ul>
-           
+            <button id="audio-button" type="button">Play Pronunciation</button>
+            <button id="favourite-button" type="button">Favourite</button>
+          </div>
         </section>
         <section id = "favourites">
           <h2>Favourite Words</h2>
           <ul id = "favourites-list"></ul>
-         
         </section>
       </div>
-            
-
-
-    
-      
-   
-
-
-     
     </main>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

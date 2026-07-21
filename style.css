@@ -32,6 +32,12 @@ input {
     border: 2px solid #C8D5C0;
     border-radius: 8px;
 }
+#error-message {
+    color: brown;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
 
 
 button {
@@ -42,6 +48,10 @@ button {
     border-radius: 8px;
     cursor: pointer;
     
+}
+button:disabled{
+    opacity:0.5;
+    cursor:not-allowed;
 }
 
 button:hover {
@@ -56,23 +66,11 @@ button:hover {
 
 
 
-#saved-words {
-    flex: 1;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #C8D5C0;
-}
-#saved-words-list li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 250px;
-    margin-bottom: 20px;
-}
+
 
 
 #result{
+    display: none;
     flex: 1;
     background: white;
     padding: 20px;
@@ -82,11 +80,15 @@ button:hover {
 }
 
 #favourites {
-   flex: 1;
+    display: none;
+    flex: 1;
     background: white;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #C8D5C0;
+}
+#favourites-list li {
+    margin-bottom: 15px;
 }
 
 .button-container {
@@ -104,16 +106,6 @@ button:hover {
 li span {
     margin-right: 15px;
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
     .content-container {
